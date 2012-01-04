@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/resin3.x"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-openedit"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

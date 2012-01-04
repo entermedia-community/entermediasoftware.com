@@ -1,0 +1,6 @@
+<page>
+
+<property name="title">EnterMedia Software - Welcome to EnterMedia 8</property>
+  <inner-layout>${themeprefix}/layouts/application.html</inner-layout>
+
+</page>

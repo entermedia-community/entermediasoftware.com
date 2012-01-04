@@ -1,0 +1,27 @@
+<page>
+
+  <property name="encoding">UTF-8</property>
+ 
+  <property name="title">EnterMedia</property>
+  <property name="allowguestregistration">true</property>
+
+  <property name="themeprefix">/theme</property>
+
+  <inner-layout>${themeprefix}/layouts/sub.html</inner-layout>
+
+  <property name="editable">true</property>
+ 
+  <style id="flexslider" href="${themeprefix}/styles/flexslider.css" ></style>
+  <style id="flexslidercss" href="${themeprefix}/styles/flexslider.css" ></style>
+  <style id="theme" href="${themeprefix}/styles/theme.css" ></style>
+
+  <script id="jquery" src="/components/javascript/libs/jquery-1.6.2.min.js" />
+  <script id="flexslider" src="/components/javascript/flexslider.js" />
+  <script id="application" src="/components/javascript/application.js" />
+  <script id="modernizr" src="/components/javascript/libs/modernizr-2.0.6.min.js" />
+
+  <script id="jquery-fancybox" src="/components/javascript/jquery.fancybox/jquery.fancybox-1.2.1.js"/>
+  <style id="jquery-fancybox-css" href="/components/javascript/jquery.fancybox/jquery.fancybox.css"/>
+  <script id="jquery-livequery" src="/components/javascript/jquery.livequery.js"/>
+
+</page>

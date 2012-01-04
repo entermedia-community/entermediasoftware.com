@@ -1,0 +1,34 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>$content.title</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  
+  
+#foreach( $script in $content.getScriptPaths() )
+	<script type="text/javascript" src="$home$script">  </script>
+#end
+
+#foreach( $style in $content.getStylePaths() )
+	<link rel="stylesheet" type="text/css" href="$home$style" />
+#end
+  
+  
+</head>
+
+<body>
+
+$pages.includeContent()
+
+</body>
+</html>
