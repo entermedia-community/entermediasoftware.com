@@ -14,9 +14,9 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection {  }
 
-a { color: #00e; text-decoration: none; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e;  }
+a { color: #6FB353; text-decoration: none; }
+a:visited { color: #6FB353; }
+a:hover { color: #93d07a;  }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
@@ -88,6 +88,7 @@ h2 {
 	font-size: 36px;
 	padding-left: 50px;
 	background: url('../images/h2-bg.png') left 19px no-repeat;
+	padding: 15px 0 15px 46px;
 }
 h3 {
 	font-size: 26px;
@@ -115,16 +116,28 @@ h6 {
 p {
 	margin: 0 0 24px 0;
 }
-#left-col p {
+#left-col p, .col12 p {
 	font-family: georgia, serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #444;
 }
-.columns {
-	-moz-column-count:2;
-	-webkit-column-count:2;
-	column-count:2;
+.columns-2 {
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px;
+	
+}
+.columns-3 {
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px;
 }
 
 /* HEADER STYLES */
@@ -434,7 +447,99 @@ header {
 	margin: 0 0 0 6px;
 }
 
-/* PALNS & PRICING */
+/* HOMEPAGE */
+
+.big-button {
+	text-align: center;
+}
+.big-button a {
+	font-size: 22px;
+	padding: 15px 0;
+	width: 300px;
+	margin: 30px auto 5px auto;
+	display: block;
+	text-align: center;
+}
+.big-button p {
+	font-style: italic;
+	color: #9f9f9f !important;
+	font-family: georgia, serif;
+	font-size: 16px;
+}
+.big-button p a {
+	padding: 0;
+	display: inline;
+	font-size: 16px;
+}
+.stb {
+	position: relative;
+	left: 6px;
+}
+.stb-top {
+	background: url('../images/sidebox-top.png');
+	width: 300px;
+	height: 39px;
+}
+.steps-to-buy {
+	background: url('../images/sidebox-middle.png');
+	width: 300px;
+	height: 352px;
+}
+.stb-bottom {
+	background: url('../images/sidebox-bottom.png');
+	width: 300px;
+	height: 374px;
+}
+.steps-to-buy p {
+	padding: 5px 48px 5px 45px;
+	margin: 0;
+}
+.sidebar-title a {
+	position: relative;
+	z-index: 1;
+	padding: 6px 20px;
+	background: #6FB353;
+	border-radius: 0px 5px 5px 0;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	box-shadow: 0 2px 4px 2px rgba(0,0,0,0.1);
+	top: -55px;
+	left: 45px;
+	margin: 0;
+	font-weight: bold;
+}
+.sidebar-title a:hover {
+	background: #82c365;
+}
+.sidebar-title {
+	position: relative;
+	height: 55px;
+}
+.sidebar-title .install {
+	width: 60px;
+	height: 61px;
+	background: url('../images/installation-sidebar.png');
+	position: relative;
+	z-index: 100;
+}
+.sidebar-title .training {
+	width: 60px;
+	height: 61px;
+	background: url('../images/training-sidebar.png');
+	position: relative;
+	z-index: 100;
+}
+.sidebar-title .support {
+	width: 60px;
+	height: 61px;
+	background: url('../images/support-sidebar.png');
+	position: relative;
+	z-index: 100;
+}
+
+
+/* PLANS & PRICING */
 
 hgroup.big-centered h1 {
 	background: none;
@@ -453,22 +558,31 @@ hgroup.big-centered h2 {
 	font-weight: normal;
 }
 .plans {
-	background: url(../images/plans-bg.png);
+	background: url(../images/plans-bg.png) left -30px no-repeat;
 	width: 978px;
 	height: 298px;
-	margin: 15px 0;
+	margin: 30px 0 40px 0;
 }
 .plan {
-	width: 204px;
+	width: 205px;
 	height: 252px;
 	float: left;
 	padding: 0;
 	margin: 0;
 	border: 1px solid #c5c5c5;
 	background: #f7f7f7;
+	position: relative;
+}
+.plan.mashup {
+	border-right: none;
+	background: #f7f7f7 url('../images/ds-right.png') top right repeat-y;
+}
+.plan.enterprise {
+	border-left: none;
+	background: #f7f7f7 url('../images/ds-left.png') top left repeat-y;
 }
 .plan.standard {
-	width: 225px;
+	width: 226px;
 	height: 292px;
 	margin: -20px 0 0 0;
 	border: 3px solid #6aac4f;
@@ -491,6 +605,14 @@ hgroup.big-centered h2 {
 	background: none;
 	padding: 0;
 }
+.plan hgroup h3 {
+	font-size: 10px;
+	color: #666;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-style: italic;
+}
 .plan.standard hgroup h1 {
 	font-size: 24px;
 	color: #000;
@@ -498,17 +620,84 @@ hgroup.big-centered h2 {
 .plan.standard hgroup h2 {
 	font-size: 16px;
 }
+.plan ul {
+	margin: 0;
+	padding: 5px 20px;
+}
+.plan.mashup ul {
+	margin: 0;
+	padding: 20px 20px;
+}
+.plan.standard ul {
+	margin: 0;
+	padding: 15px 20px;
+}
 .plan ul li {
 	color: #666;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: bold;
+	list-style: none;
+	height: 25px;
+	line-height: 25px;
+	margin: 10px 0;
+}
+.plan.standard ul li {
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0;
+	font-size: 12px;
 }
 .plan .btn {
-	padding: 5px 40px;    
+	padding: 5px 40px;
+	font-size: 14px; 
+	position: absolute;
+	bottom: 20px;
+	left: 23px;   
 }
 .plan.standard .btn {
 	padding: 6px 50px;
 }
+.plan ul li span {
+	float: left;
+}
+.plan ul li span.details {
+	font-size: 10px;
+	font-weight: normal;
+	color: #6AAC4F;
+	font-style: italic;
+	line-height: 11px;
+	margin: -6px 0 0 33px;
+}
+
+.icon {
+	height: 25px;
+	width: 25px;
+	padding-left: 8px;
+}
+.standard .icon {
+	height: 30px;
+	width: 30px;
+	padding-left: 10px;
+}
+.icon.install {
+	background: url('../images/icon-install-small.png') left top no-repeat;
+}
+.icon.training {
+	background: url('../images/icon-training-small.png') left top no-repeat;
+}
+.icon.support {
+	background: url('../images/icon-support-small.png') left top no-repeat;
+}
+.standard .icon.install {
+	background: url('../images/icon-install.png') left top no-repeat;
+}
+.standard .icon.training {
+	background: url('../images/icon-training.png') left top no-repeat;
+}
+.standard .icon.support {
+	background: url('../images/icon-support.png') left top no-repeat;
+}
+
 /* FOOTER STYLES */
 
 footer {
