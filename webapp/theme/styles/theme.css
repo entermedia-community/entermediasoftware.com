@@ -859,9 +859,10 @@ ul#tour li {
 }
 #tour li h1 {
 	text-align: left;
-	padding-left: 340px;
+	padding-left: 310px;
 	height: 200px;
-	margin: -10px 0 0 0;
+	margin: -50px 0 50px 0;
+	padding-top: 40px;
 }
 #tour li h1 span {
 	font-family: georgia, 'times new roman', serif;
@@ -873,7 +874,19 @@ ul#tour li {
 	display: block;
 	font-size: 18px;
 	line-height: 24px;
-	margin: 20px 0 0 0;
+	margin: 15px 0 0 0;
+}
+#tour li.find h1 {
+	background: url('../../media/tour/find-main.png') left top no-repeat;
+}
+#tour li.communicate h1 {
+	background: url('../../media/tour/communicate-main.png') left top no-repeat;
+}
+#tour li.share h1 {
+	background: url('../../media/tour/share-main.png') left top no-repeat;
+}
+#tour li.expand h1 {
+	background: url('../../media/tour/expand-main.png') left top no-repeat;
 }
 .copy {
 	margin: 20px 0;
@@ -897,7 +910,7 @@ ul#tour li {
 	font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
 .copy img {
-	margin: -20px 0 0 0;
+	margin: -10px 0 0 0;
 	width: 400px;
 	height: 200px;
 }
