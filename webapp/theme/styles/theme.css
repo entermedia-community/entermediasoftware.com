@@ -104,6 +104,7 @@ h5 {
 h6 {
 	font-size: 18px;
 	color: #000;
+	letter-spacing: -0.045em;
 }
 .breakout {
 	color: #6fb353;
@@ -768,6 +769,147 @@ footer p {
 	color: #2d5a1a;
 	font-size: 12px;
 }
+
+/* TOUR STYLES */
+
+#tour-bg {
+	background:#fcfcfc;
+	border-bottom: 1px solid #eee;
+	width: 10000px;
+	height: 200px;
+	margin: -20px 0 -170px -5000px;
+}	
+ul#tour {
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+ul#tour li {
+	list-style: none;
+	margin: 20px 0;
+}	
+#tourwrap h2 {
+	font-size:16px;
+}
+#tournav {
+	z-index:10;
+	position: relative;
+}	
+#tournav .tour-option {
+	margin: 0;
+	padding: 15px 12px 15px 60px;
+	border:1px solid #ccc;
+	border-bottom: none;
+	background-color: #fff;
+}
+#tournav .tour-option span {
+	display: block;
+	margin-top: 2px;
+}
+#share {
+	background: url('../images/tour-share-small.png') 13px 20px no-repeat;
+}
+#find {
+	background: url('../images/tour-search-small.png') 13px 20px no-repeat;
+}
+#communicate {
+	background: url('../images/tour-communicate-small.png') 13px 20px no-repeat;
+}
+#expand {
+	background: url('../images/tour-expand-small.png') 13px 20px no-repeat;
+}
+#tournav .tour-title.top {
+	border-radius: 5px 5px 0 0;
+	padding: 8px 0;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'helvetica neue', helvetica, sans-serif;
+	height: 16px;
+	border: 1px solid  #5b9642;
+	color: #fff;
+	background: #6fb353; /* Old browsers */
+	background: -moz-linear-gradient(top, #6fb353 0%, #5b9642 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6fb353), color-stop(100%,#5b9642)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6fb353 0%,#5b9642 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6fb353 0%,#5b9642 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6fb353 0%,#5b9642 100%); /* IE10+ */
+	background: linear-gradient(top, #6fb353 0%,#5b9642 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fb353', endColorstr='#5b9642',GradientType=0 ); /* IE6-9 */
+}
+#tournav .tour-title.top h5 {
+	color: #fff;
+	font-size: 13px;
+}
+#tournav .tour-option.bottom {
+	border-radius: 0 0 5px 5px;
+	border-bottom: 1px solid #ccc;
+}
+#tournav .tour-option:hover, #tournav .tour-option.current {
+	background-color: #fdf2c6;
+	cursor: pointer;
+}
+#tournav a {
+	display:inline;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#tournav span {
+	font-size:11px;
+}
+#tour li h1 {
+	text-align: left;
+	padding-left: 340px;
+	height: 200px;
+	margin: -10px 0 0 0;
+}
+#tour li h1 span {
+	font-family: georgia, 'times new roman', serif;
+	font-style: italic;
+	font-size:22px;
+	color:#6FB353;
+	letter-spacing: 0em;
+	font-weight: normal;
+	display: block;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 20px 0 0 0;
+}
+.copy {
+	margin: 20px 0;
+	height: 250px;
+}
+.copy p {
+	width: 300px;
+	vertical-align: middle;
+	color:#666666;
+	font-size: 13px;
+	line-height: 2;
+}
+.copy p span{ 
+	font-size:20px;
+	font-weight: bold;
+	letter-spacing: -0.045em;
+	display: block;
+	color:black;
+	line-height: 1;
+	margin: 0 0 15px 0;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+.copy img {
+	margin: -20px 0 0 0;
+	width: 400px;
+	height: 200px;
+}
+.copy img, .copy.right p {
+	float: right;
+}
+.copy.right img, .copy.left p {
+	float: left;
+}
+
+	
+
 
 /* BUTTONS */
 
