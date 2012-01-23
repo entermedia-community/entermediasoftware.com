@@ -930,6 +930,17 @@ ul#tour li {
 	margin: 0 0 15px 0;
 }
 
+/* FEATURES STYLES */
+
+div.hr {
+	border-top: 1px solid #eee;
+	padding: 15px 0 0 0;
+}
+.more-features ul li {
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 5px;
+}
 
 /* BUTTONS */
 
@@ -979,7 +990,15 @@ ul#tour li {
 .btn:visited {
 	color: #fff;
 }
-
+.plan .btn:active {
+	top: 19px;
+}
+.plan.mashup .btn:active {
+	top: 36px;
+}
+.plan.standard .btn:active {
+	top: 12px;
+}
 /* ==|== grid system (978.gs) ======================================== */
 
 div.container { width: 978px; margin: 0px auto; }
