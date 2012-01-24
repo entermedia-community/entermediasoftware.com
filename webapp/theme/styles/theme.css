@@ -859,7 +859,7 @@ ul#tour li {
 }
 #tour li h1 {
 	text-align: left;
-	padding-left: 310px;
+	padding-left: 330px;
 	height: 200px;
 	margin: -50px 0 50px 0;
 	padding-top: 40px;
@@ -920,8 +920,15 @@ ul#tour li {
 .copy.right img, .copy.left p {
 	float: left;
 }
-
-	
+.tour-cta {
+	clear: both;
+	margin: 25px 0 0 0;
+	border-top: 1px solid #eee;
+	padding: 25px 0 0 0;
+}
+.tour-cta .above {
+	margin: 0 0 15px 0;
+}
 
 
 /* BUTTONS */
