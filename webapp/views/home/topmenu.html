@@ -1,0 +1,28 @@
+<ul id="main-nav">
+#set( $section = $content.section )
+
+#set( $links = $searcherManager.getList("site","topmenu"))
+#foreach($link in $links)
+	#if( $velocityCount > 1)
+	<li class="divider">/</li>
+	#end
+	<li #if( $section == $link.id )class="current" #end><a href="/views/${link.id}/index.html">$link.name</a></li>
+#end
+	<!-- li class="dd left"><a href="/views/community/index.html">Community</a>
+	<ul>
+		<li><a href="#">Education</a>
+		<li><a href="#">Video Production</a>
+		<li><a href="#">Healthcare</a>
+		<li><a href="#">Business</a>
+		<li><a href="#">Marketing</a>
+	</ul>
+	</li 
+	<li><a href="/views/features/index.html">Features</a></li>
+	<li class="divider">/</li>
+	<li><a href="/views/plans/index.html">Plans &amp; Pricing</a></li>
+	<li class="divider">/</li>
+	<li><a href="/views/about/index.html">About</a></li>
+	<li class="divider">/</li>
+	<li><a href="/views/contact/index.html">Contact</a></li>
+	-->
+</ul>
