@@ -11,7 +11,7 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection {  }
 ::selection {  }
 
 a { color: #6FB353; text-decoration: none; }
@@ -99,7 +99,6 @@ h4 {
 }
 h5 {
 	font-size: 22px;
-	color: #6fb353;
 }
 h6 {
 	font-size: 18px;
@@ -935,11 +934,45 @@ ul#tour li {
 div.hr {
 	border-top: 1px solid #eee;
 	padding: 15px 0 0 0;
+	margin: 20px 0;
 }
 .more-features ul li {
 	font-size: 14px;
 	line-height: 21px;
 	margin-top: 5px;
+}
+
+/* FORM STYLES */
+ 
+form#contact-us {
+		
+}
+form *:focus {
+	outline: none;
+}
+form label {
+	display: block;
+	font-weight: bold;
+	padding: 15px 0 4px 0;
+	margin: 0;
+}
+form .field {
+	border-radius: 5px;
+	padding: 6px 12px;
+	font-size: 16px;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	border: 1px solid #ccc;
+	width: 40%;
+	margin: 0;
+}
+form .field.full {
+	width: 80%;
+}
+form textarea {
+	height: 120px;
+}
+form .field:focus {
+	border: 1px solid #6FB353;
 }
 
 /* BUTTONS */
