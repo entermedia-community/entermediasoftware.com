@@ -944,10 +944,22 @@ div.hr {
 
 /* CONTACT STYLES */
 
-p.contact-block {
-	background: url('../images/contact-map.png') top left no-repeat;
+p.sidebar-block {
 	color: #666;
-	padding: 8px 0 20px 80px;
+	padding: 17px 0 22px 80px;
+}
+p.sidebar-block.phone {
+	background: url('../images/contact-phone.png') top left no-repeat;
+}
+p.sidebar-block.support {
+	background: url('../images/contact-support.png') top left no-repeat;
+}
+p.sidebar-block.map {
+	background: url('../images/contact-map.png') top left no-repeat;
+	padding: 8px 0 25px 80px;
+}
+p.sidebar-block.download {
+	background: url('../images/download.png') top left no-repeat;
 }
 
 /* FORM STYLES */
@@ -958,7 +970,7 @@ form#contact-us {
 	border-radius: 5px;
 	padding: 20px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-	margin-top: 4px;
+	margin-top: 2px;
 }
 form *:focus {
 	outline: none;
