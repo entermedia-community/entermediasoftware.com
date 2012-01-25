@@ -11,7 +11,7 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection {  }
 ::selection {  }
 
 a { color: #6FB353; text-decoration: none; }
@@ -99,7 +99,6 @@ h4 {
 }
 h5 {
 	font-size: 22px;
-	color: #6fb353;
 }
 h6 {
 	font-size: 18px;
@@ -930,6 +929,93 @@ ul#tour li {
 	margin: 0 0 15px 0;
 }
 
+/* FEATURES STYLES */
+
+div.hr {
+	border-top: 1px solid #eee;
+	padding: 15px 0 0 0;
+	margin: 20px 0;
+}
+.more-features ul li {
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 5px;
+}
+
+/* CONTACT STYLES */
+
+p.contact-block {
+	background: url('../images/contact-map.png') top left no-repeat;
+	color: #666;
+	padding: 8px 0 20px 80px;
+}
+
+/* FORM STYLES */
+ 
+form#contact-us {
+	background: #fdfdfd;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	margin-top: 4px;
+}
+form *:focus {
+	outline: none;
+}
+form label {
+	width: 100%;
+	padding: 15px 20px 18px 20px;
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+	display: block;
+	margin: 0 -20px
+}
+form label.first {
+	margin: -20px -20px 0 -20px;
+}
+form label:hover, form label:focus {
+	background: #fafafa;
+}
+form label span {
+	margin-top: 5px;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 12px;
+	color: #6FB353;
+	display: block;
+}
+form label .field {
+	border-radius: 5px;
+	padding: 6px 12px;
+	font-size: 16px;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	border: 1px solid #ddd;
+	width: 40%;
+	float: right;
+	margin: 3px 0 0 0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+form label span + .field {  
+	margin: -32px 0 0 0;
+}
+form label.last .field {
+	width: 10%;
+}
+form .field.full {
+	width: 60%;
+}
+form textarea {
+	height: 120px;
+}
+form .field:focus {
+	border: 1px solid #6FB353;
+}
+form .btn {
+	float: right;
+	margin: 18px 0 0 0;
+}
+
 
 /* BUTTONS */
 
@@ -979,7 +1065,15 @@ ul#tour li {
 .btn:visited {
 	color: #fff;
 }
-
+.plan .btn:active {
+	top: 19px;
+}
+.plan.mashup .btn:active {
+	top: 36px;
+}
+.plan.standard .btn:active {
+	top: 12px;
+}
 /* ==|== grid system (978.gs) ======================================== */
 
 div.container { width: 978px; margin: 0px auto; }
