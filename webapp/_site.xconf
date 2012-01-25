@@ -3,14 +3,15 @@
   <property name="encoding">UTF-8</property>
  
   <property name="title">EnterMedia</property>
+  <property name="editable">true</property>
   <property name="allowguestregistration">true</property>
 
   <property name="themeprefix">/theme</property>
 
   <inner-layout>${themeprefix}/layouts/sub.html</inner-layout>
-
-  <property name="editable">true</property>
- 
+  
+  <path-action name="DataEditModule.loadSearcherManager" /> 
+  
   <style id="flexslider" href="${themeprefix}/styles/flexslider.css" ></style>
   <style id="flexslidercss" href="${themeprefix}/styles/flexslider.css" ></style>
   <style id="theme" href="${themeprefix}/styles/theme.css" ></style>
