@@ -1,4 +1,6 @@
 
 <page>
 	<property name="sectiontitle">Contact EnterMedia</property>
+	<script id="validate" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js" />
+  
 </page>

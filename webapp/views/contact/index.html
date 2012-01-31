@@ -10,11 +10,11 @@
 		    	<form id="contact-us" class="clearfix">
 		    		<label for="name" class="clearfix first">Name
 		    			<span>This field is required.</span>
-		    			<input class="field" type="text" id="name" />
+		    			<input class="field required" type="text" id="name" />
 		    		</label>
 		    		<label for="email" class="clearfix">Email
 		    			<span>This field is required.</span>
-		    			<input class="field" type="text" id="email" />
+		    			<input class="field required" type="text" id="email" />
 		    		</label>
 		    		<label for="phone" class="clearfix">Phone Number
 		    			<input class="field" type="text" id="phone" />
@@ -31,7 +31,7 @@
 		    		</label>
 		    		<label for="human" class="clearfix last">5 + 2 =
 		    			<span>This field is required.</span>
-		    			<input class="field human-test" type="text" id="human" />
+		    			<input class="field human-test required" type="text" id="human" />
 		    		</label>
 		    		<input class="btn" type="submit" value="Get Answers!" />
 		    	</form>
@@ -50,3 +50,9 @@
 				1550 Magnolia Dr.<br />
 				Cincinnati, Ohio, 45215</p>
 	    	</div>
+	    	
+<script>
+	$(document).ready(function(){
+  	  $("#contact-us").validate();
+    });
+</script>
