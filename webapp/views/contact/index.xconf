@@ -5,5 +5,4 @@
   <property name="to">sales@entermediasoftware.com</property>
   <property name="from">julie@entermediasoftware.com</property>
   <property name="thankspage">./thankyou.html</property>
-
 </page>
