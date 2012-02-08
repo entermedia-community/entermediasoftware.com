@@ -139,6 +139,18 @@ p {
 	column-count: 3;
 	column-gap: 20px;
 }
+.install-list {
+	padding: 15px;
+	background: #f7f7f7;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+}
+.install-list p, .install-list li { 
+	font-family: arial, helvetica, sans-serif !important;
+	line-height: 21px;
+	color: #444;
+	font-size: 14px;
+}
 
 /* HEADER STYLES */
 
