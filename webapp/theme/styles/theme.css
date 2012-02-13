@@ -11,8 +11,8 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-::-moz-selection {  }
-::selection {  }
+::-moz-selection { background: #adceff; color: #fff; text-shadow: none; }
+::selection { background: #adceff; color: #fff; text-shadow: none; }
 
 a { color: #6FB353; text-decoration: none; }
 a:visited { color: #6FB353; }
