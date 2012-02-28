@@ -549,7 +549,13 @@ header {
 	position: relative;
 	z-index: 100;
 }
-
+.lgpl {
+	background: url('../images/opensource.jpg') left 8px no-repeat;
+	width: 60px;
+	height: 68px;
+	float: left;
+	padding: 20px 15px 0 0;
+}
 
 /* PLANS & PRICING */
 
