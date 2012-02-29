@@ -1,0 +1,6 @@
+<page>
+	<property name="eventname">Pull Code</property>	
+	<path-action name="Script.run">
+		<script>./pull.groovy</script>
+	</path-action>
+</page>

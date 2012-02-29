@@ -1,0 +1,15 @@
+<host xmlns="http://caucho.com/ns/resin">
+	<host-alias>.*demo.${name}</host-alias>
+	<host-alias>demo.entermediasoftware.com</host-alias>
+
+
+<web-app-default>
+      <access-log path="WEB-INF/logs/access.log" 
+            format='%h %l %u %t "%r" %s %b "%{Referer}i" "%{User-Agent}i"'
+            rollover-period="1W"/>
+	<stdout-log path="WEB-INF/logs/stdout.log" rollover-period="1W" />
+    	<stderr-log path="WEB-INF/logs/stderr.log" rollover-period="1W" />
+</web-app-default>
+
+
+</host>
