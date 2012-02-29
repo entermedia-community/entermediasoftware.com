@@ -1,0 +1,15 @@
+
+<page>
+<<<<<<< HEAD
+  <property name="sectiontitle">Contact EnterMedia</property>
+  <path-action name="Email.sendFormEmail"/>
+  <property name="to">sales@entermediasoftware.com</property>
+  <property name="from">julie@entermediasoftware.com</property>
+  <property name="thankspage">./thankyou.html</property>
+
+=======
+	<property name="sectiontitle">Contact EnterMedia</property>
+	<script id="validate" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js" />
+  
+>>>>>>> c6fc2913d0ffa6bddcf58755e0b9128dcc703864
+</page>

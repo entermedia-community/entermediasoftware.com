@@ -1,64 +1,26 @@
-
 <div class="col12">
-	<h2>Connect with an Open Community</h2> 
-	<aside class="breakout">
-		Questions? Comments? Looking for a soul mate? We would love to help out with either of the first two. 
-		Just tell us a little about yourself and share the details. We have marketing, technical support, 
-		and an open interactive community of other people just like you who make a great audience.
-	</aside>
-</div>
+	<h2>
+		Connect with an Open Community</h2>
+	<aside class="breakout"> Questions? Comments? Looking for a soul mate? Entermedia would love to answer the first two. Entermedia's marketing, technical support, and participation in an open interactive community is a positive force for collobartive efforts and growth </aside></div>
 <div class="col8" id="left-col">
-		    	<form id="contact-us" class="clearfix" method="post" action="./index.html">
-		    		<label for="name" class="clearfix first">Name
-		    			<span>This field is required.</span>
-		    			<input name="name" class="field required" type="text" id="name" />
-		    		</label>
-		    		<label for="email" class="clearfix">Email
-		    			<span>This field is required.</span>
-		    			<input name="email" class="field required" type="text" id="email" />
-		    		</label>
-		    		<label for="phone" class="clearfix">Phone Number
-		    			<input name="phone" class="field" type="text" id="phone" />
-		    		</label>
-		    		<label for="organization" class="clearfix">Business/Organization
-		    			<input  name="organization" class="field full" type="text" id="organization" />
-		    		</label>
-		    		<label for="website" class="clearfix">Website
-		    			<input name="website" class="field full" type="text" id="website" />
-		    		</label>
-		    		<label for="message" class="clearfix">Message
-		    			<span>This field is required.</span>
-		    			<textarea name="message" class="field full" id="message"></textarea>
-		    		</label>
-		    		
-		    		<label for="human" class="clearfix last">5 + 2 =
-		    			<span>This field is required.</span>
-		    			<input name="human" class="field human-test required" type="text" id="human" />
-		    		</label>
-		    		
-		    		<input type="hidden" name="subject" value="EM8 Contact Form" />
-		    		
-		    		<input class="btn" name="submit" type="submit" value="Get Answers!" />
-		    	</form>
-	    	</div>
-	    	<div class="col4" id="right-col">
-	    		<img style="margin-bottom: 15px;" src="$home$themeprefix/images/contact-icon.png" />
-	    		<p class="sidebar-block phone">
-	    			<strong>Sales:</strong><br />
-	    			1 (937) 671-6212<br />
-	    		</p>
-	    		<p class="sidebar-block support">
-	    			<strong>Support:</strong><br />
-	    			<a href="mailto:gatekeeper@entermedisoftware.com">gatekeeper@entermedisoftware.com</a>	    		
-	    		</p>
-	    		<p class="sidebar-block map"><strong>EnterMedia Inc.</strong><br />
-				1550 Magnolia Dr.<br />
-				Cincinnati, Ohio, 45215</p>
-	    	</div>
-	    	
+	<form action="./index.html" class="clearfix" id="contact-us" method="post">
+		<label class="clearfix first" for="name">Name <input class="field required" id="name" name="name" type="text" /> </label> <label class="clearfix" for="email">Email <input class="field required" id="email" name="email" type="text" /> </label> <label class="clearfix" for="phone">Phone Number <input class="field" id="phone" name="phone" type="text" /> </label> <label class="clearfix" for="organization">Business/Organization <input class="field full" id="organization" name="organization" type="text" /> </label> <label class="clearfix" for="website">Website <input class="field full" id="website" name="website" type="text" /> </label> <label class="clearfix" for="message">Message<textarea class="field full" id="message" name="message"></textarea></label> <label class="clearfix last" for="human">5 + 2 = <span>This field is required</span> <input class="field human-test required" id="human" name="human" type="text" /> </label> <input name="subject" type="hidden" value="EM8 Contact Form" /> <input class="btn" name="submit" type="submit" value="Get Answers!" />&nbsp;</form>
+</div>
+<div class="col4" id="right-col">
+	<img src="$home$themeprefix/images/contact-icon.png" style="margin-bottom: 15px;" />
+	<p class="sidebar-block phone">
+		<strong>Sales:</strong><br />
+		1 (937) 671-6212</p>
+	<p class="sidebar-block support">
+		<strong>Support:</strong><br />
+		<a href="mailto:gatekeeper@entermedisoftware.com">gatekeeper@entermedisoftware.com</a></p>
+	<p class="sidebar-block map">
+		<strong>EnterMedia Inc.</strong><br />
+		1550 Magnolia Dr.<br />
+		Cincinnati, Ohio, 45215</p>
+</div>
 <script>
 	$(document).ready(function(){
   	  $("#contact-us").validate();
     });
 </script>
-

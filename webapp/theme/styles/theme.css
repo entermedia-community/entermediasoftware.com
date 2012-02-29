@@ -65,7 +65,7 @@ td { vertical-align: top; }
 /* ==|== primary styles ===================================================== */
 
 
-body {
+#body {
 	background: url('../images/bg.png');
 	font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
@@ -550,13 +550,13 @@ header {
 	z-index: 100;
 }
 .lgpl {
-	background: url('../images/opensource.jpg') left -10px no-repeat;
+	background: url('../images/opensource.jpg') left top no-repeat;
 	width: 60px;
 	height: 68px;
 	float: left;
 	padding: 0 15px 0 0;
 	position: relative;
-	top: -10px;
+	top: -6px;
 }
 
 /* PLANS & PRICING */
