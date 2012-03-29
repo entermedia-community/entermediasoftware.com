@@ -8,7 +8,7 @@
   <property name="description">Our convenient contact form lets you contact us directly. EntermediaSoftware.com has most of the information you will need, and for any additional information or to schedule a live demonstration with our developers we are ready to assist you. EnterMedia - digital asset management server platform.</property>
   <property name="from">julie@entermediasoftware.com</property>
   <property name="thankspage">./thankyou.html</property>
-  <path-action name="User.loadQuestion" ></path>
-  <path-action name="User.checkQuestion" ></path>
-  <path-action name="Email.sendFormEmail"></path>
+  <path-action name="User.loadQuestion" />
+  <path-action name="User.checkQuestion" />
+  <path-action name="Email.sendFormEmail"/>
 </page>
