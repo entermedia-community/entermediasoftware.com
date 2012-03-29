@@ -1,8 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
 <page>
-  <property name="sectiontitle">Contact EnterMedia</property>
-  <path-action name="Email.sendFormEmail"/>
   <property name="to">sales@entermediasoftware.com</property>
+  <property name="title">EnterMedia Software - Welcome to EnterMedia 8 - Contact</property>
+  <property name="keywords">open source, media asset management, digital asset management, dam, community, contact information</property>
+  <property name="sectiontitle">Contact EnterMedia</property>
+  <property name="description">Our convenient contact form lets you contact us directly. EntermediaSoftware.com has most of the information you will need, and for any additional information or to schedule a live demonstration with our developers we are ready to assist you. EnterMedia - digital asset management server platform.</property>
   <property name="from">julie@entermediasoftware.com</property>
   <property name="thankspage">./thankyou.html</property>
+  <path-action name="User.loadQuestion" ></path>
+  <path-action name="User.checkQuestion" ></path>
+  <path-action name="Email.sendFormEmail"></path>
 </page>

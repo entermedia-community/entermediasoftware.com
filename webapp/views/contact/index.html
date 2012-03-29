@@ -1,26 +1,56 @@
 <div class="col12">
-	<h2>
-		Connect with an Open Community</h2>
-	<aside class="breakout"> Questions? Comments? Looking for a soul mate? Entermedia would love to answer the first two. Entermedia's marketing, technical support, and participation in an open interactive community is a positive force for collobartive efforts and growth </aside></div>
+	<h2>Connect with an Open Community</h2>
+	<aside class="breakout">
+		Questions? Comments? Looking for a soul mate? EnterMedia would love to answer the first two. EnterMedia&#39;s marketing, technical support, and participation in an open interactive community is a positive force for collaborative efforts and growth.
+	</aside>
+</div>
 <div class="col8" id="left-col">
 	<form action="./index.html" class="clearfix" id="contact-us" method="post">
-		<label class="clearfix first" for="name">Name <input class="field required" id="name" name="name" type="text" /> </label> <label class="clearfix" for="email">Email <input class="field required" id="email" name="email" type="text" /> </label> <label class="clearfix" for="phone">Phone Number <input class="field" id="phone" name="phone" type="text" /> </label> <label class="clearfix" for="organization">Business/Organization <input class="field full" id="organization" name="organization" type="text" /> </label> <label class="clearfix" for="website">Website <input class="field full" id="website" name="website" type="text" /> </label> <label class="clearfix" for="message">Message<textarea class="field full" id="message" name="message"></textarea></label> <label class="clearfix last" for="human">5 + 2 = <span>This field is required</span> <input class="field human-test required" id="human" name="human" type="text" /> </label> <input name="subject" type="hidden" value="EM8 Contact Form" /> <input class="btn" name="submit" type="submit" value="Get Answers!" />&nbsp;</form>
+		<label class="clearfix first" for="name">Name
+			<input class="field required" id="name" name="name" type="text" />
+		</label><label class="clearfix" for="email">Email
+			<input class="field required" id="email" name="email" type="text" />
+		</label><label class="clearfix" for="phone">Phone Number
+			<input class="field" id="phone" name="phone" type="text" />
+		</label><label class="clearfix" for="organization">Business/Organization
+			<input class="field full" id="organization" name="organization" type="text" />
+		</label><label class="clearfix" for="website">Website
+			<input class="field full" id="website" name="website" type="text" />
+		</label><label class="clearfix" for="message">Message			<textarea class="field full" id="message" name="message"></textarea></label>
+		<label class="clearfix last" for="answerid">$question.getDescription() <span>This field is required</span>
+			<input class="field human-test required" id="human" name="answerid" type="text" />
+		</label>
+		<input name="subject" type="hidden" value="EM8 Contact Form" />
+		<input class="btn" name="submit" type="submit" value="Get Answers!" />
+		&nbsp;
+	</form>
 </div>
+$error
 <div class="col4" id="right-col">
 	<img src="$home$themeprefix/images/contact-icon.png" style="margin-bottom: 15px;" />
 	<p class="sidebar-block phone">
-		<strong>Sales:</strong><br />
-		1 (937) 671-6212</p>
+		<strong>Sales:</strong>
+		<br />
+		1 (937) 671-6212
+		<br />
+		<a href="mailto:sales@entermediasoftware.com">sales@entermediasoftware.com</a>
+	</p>
 	<p class="sidebar-block support">
-		<strong>Support:</strong><br />
-		<a href="mailto:gatekeeper@entermedisoftware.com">gatekeeper@entermedisoftware.com</a></p>
+		<strong>Support:</strong>
+		<br />
+		<a href="mailto:gatekeeper@entermediasoftware.com">gatekeeper@entermediasoftware.com</a>
+	</p>
 	<p class="sidebar-block map">
-		<strong>EnterMedia Inc.</strong><br />
-		1550 Magnolia Dr.<br />
-		Cincinnati, Ohio, 45215</p>
+		<strong>EnterMedia Inc.</strong>
+		<br />
+		1550 Magnolia Dr.
+		<br />
+		Cincinnati, Ohio, 45215
+	</p>
 </div>
 <script>
-	$(document).ready(function(){
-  	  $("#contact-us").validate();
-    });
+	$(document).ready(function() {
+		$("#contact-us").validate();
+	});
+
 </script>
