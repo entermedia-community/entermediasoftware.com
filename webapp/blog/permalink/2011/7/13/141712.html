@@ -1,0 +1,23 @@
+<p>&nbsp;There is a little setup work needed to enable per &nbsp;user themes. In your _site.xconf you would need to change the &nbsp;&quot;themeprefix&quot; variable to something like this:</p>
+<div>&lt;property name=&quot;themeprefix&quot;&gt;/${applicationid}/themes/$[userthemepack]&lt;/property&gt;</div>
+<div>&nbsp;</div>
+<div>Note the {} are used to resolve to other properties and the [ ] &nbsp;are used to pull user profile settings.&nbsp;</div>
+<div>&nbsp;</div>
+<div>You &nbsp;can setup variables on a per user or per settings group. A settings &nbsp;group can used to assign themes on a per catalog basis. Each use would &nbsp;then be assigned a settings group for that catalog.&nbsp;</div>
+<div>&nbsp;</div>
+<div>Creating a Theme:</div>
+<div>&nbsp;</div>
+<div>We recommend starting with a copy of &nbsp;one of the applications to make a custom theme. /eml is a good starting &nbsp;point. We have recently made the move to jQuery UI for most CSS themes. &nbsp;/eml is a new theme that uses jQuery and we expect to finalize by July.</div>
+<div>&nbsp;</div>
+<div>1. Create a folder for your theme:</div>
+<div>&nbsp;</div>
+<div>/theme/styles/content.css &lt;-- Standard Font sizes, colors</div>
+<div>/theme/styles/layout.css &nbsp;&lt;-- spacing and layout for navigation, todo: clean out and combine &nbsp;useful parts from yaml basemod_grids and yamlbase.css</div>
+<div>&nbsp;/theme/styles/theme.css &lt;-- This has custom overrides/tweaks for font colors etc. It is loaded last</div>
+<div>&nbsp;</div>
+<div>2. Use the base/emfrontend/theme/jqueryui to store all custom UI themes</div>
+<div>&nbsp;</div>
+<div>3. Use _site.xconf to include the extra styles sheets you need. Dont use @import url(xxx.css);</div>
+<div>&nbsp;</div>
+<div>4. ui-components.js has common widgets:&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp;uibutton uidropdown uicalendar uipanel uimessagebox uitabs</div>

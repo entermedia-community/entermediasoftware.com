@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<versions> 
+  <version number="1" date="1269459529882" author="635" type="added">Edited blog settings via admin interface</version>  
+  <version number="2" date="1291146191972" author="indiadams" type="added">Edited blog settings via admin interface</version>  
+  <version number="3" date="1291229220663" author="indiadams" type="edited">Edited blog settings via admin interface</version>  
+  <version number="4" date="1291229270175" author="indiadams" type="edited">Edited blog settings via admin interface</version>  
+  <version number="5" date="1305151105949" author="cburkey" type="edited">Edited blog settings via admin interface</version>  
+  <version number="6" date="1305151446684" author="cburkey" type="edited">Edited blog settings via admin interface</version>  
+  <version number="7" date="1321288110381" author="julie" type="edited">Edited blog settings via admin interface</version>
+</versions>

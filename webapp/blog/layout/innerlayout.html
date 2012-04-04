@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="$home$bloghome/_styles.css">
+
+<link rel="alternate" type="application/atom+xml" title="$blog.title" href="$home${bloghome}/atom.xml">
+<link rel="alternate" type="application/rss+xml" title="$blog.title" href="$home${bloghome}/rss.xml">
+
+<!-- Blog Header -->
+<div class="row">
+	<div class="col8">
+		 <div id="oeblogdescription">$pages.stream("$bloghome/layout/description.html")</div>
+		
+		 $pages.streamContent()
+	</div>
+	<div class="col4">
+	 
+		    $pages.include("$bloghome/layout/sidebar.html")
+	
+	</div>
+</div>

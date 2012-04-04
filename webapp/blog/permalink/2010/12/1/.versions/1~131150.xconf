@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+  <blog author="" title="Sample Blog Post." username="indiadams">
+    <publishdate>2010-12-01T13:11:50.289-0500</publishdate>
+    <visible>true</visible>
+    <property id="title">Sample Blog Post.</property>
+    <notifications/>
+    <property id="title">Sample Blog Post.</property>
+  </blog>
+</page>

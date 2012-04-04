@@ -1,0 +1,57 @@
+<p>
+<link href="$home/docs/docs.css" rel="stylesheet" type="text/css" media="all" /></p>
+<div class="doc">
+<p>From Amazon EC2's web site: &quot;Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers&quot;.</p>
+<p>EnterMedia is EC2-ready, which means that you can have your own Amazon EC2 server running EnterMedia in no more than 10 minutes!</p>
+<p>This document will guide you through the process of starting your EnterMedia-EC2 server. The steps and images in this guide were taken from a Linux PC running Gnome, although everything in here should work for any Mac and Linux Desktop. <span style="font-weight: bold;">Do not hesitate to post your questions or problems into our Developer Community.</span></p>
+<p>The only requisites for running this is guide is basic Linux (or Mac) and EC2 knowledge.</p>
+<h3>Launch an EnterMedia instance</h3>
+<p>We have prepared and shared an Ubuntu Linux Operating System Image (AMI) ready for running EnterMedia. It is basically an Ubuntu 9.04 Jaunty installation, part of the <a href="http://alestic.com/">Alestic</a> series, with all the software needed by EnterMedia:</p>
+<ul>
+	<li>Java 6 (OpenJDK)</li>
+	<li>Resin 3.1.9</li>
+	<li>FFMpeg</li>
+	<li>Lame</li>
+	<li>ExifTool</li>
+	<li>ImageMagick</li>
+</ul>
+<p>To run an instance of this image:</p>
+<ol>
+	<li>Go to the Amazon Web Services web site:  		 		<a href="http://aws.amazon.com/">http://aws.amazon.com/</a>  		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/01.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/01.png" /> 		 		</a></li>
+	<li>Go to the AWS Management Console. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/02.png"> 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/02.png" /> 		 		</a></li>
+	<li>Select &quot;EC2&quot; as the desired console.  		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/03.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/03.png" /> 		 		</a></li>
+	<li>Login with your Amazon user name and password. 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/04.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/04.png" /> 		 		</a></li>
+	<li>Go to the &quot;AMIs&quot; section.  		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/05.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/05.png" /> 		 		</a></li>
+	<li>You will get to the AMIs screen. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/06.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/06.png" /> 		 		</a></li>
+	<li>In the &quot;viewing&quot; filters select &quot;EBS Images&quot; in the first dropdown and enter &quot;entermedia&quot; in the text box.   		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/07.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/07.png" /> 		 		</a></li>
+	<li>Right click the latest version of our AMI and select &quot;Lauch instance&quot;. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/08.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/08.png" /> 		 		</a></li>
+	<li>Enter the number of instances (servers) you want to run and select an available key pair (<b>Note: you will need the certificate file for this key pair to log into your server later.</b>) Then select one or more security groups for this group (<b>Note: you will need to allow traffic on port 80 to reach the web server.</b>) 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/09.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/09.png" /> 		 		</a></li>
+	<li>Click on &quot;Close&quot; and wait for the server to start. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/10.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/10.png" /> 		 		</a></li>
+	<li>You can check the server status in the &quot;Instances&quot; screen. After the server has started, it might take one more minute for the Resin web server to start. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/11.png"> 				 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/11.png" /> 		 		</a></li>
+	<li>From the &quot;Instances&quot; screen, copy the &quot;Public DNS&quot; field of your new instance and paste it into your browser's address bar. You should get a &quot;Test Page&quot; message. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/12.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/12.png" /> 		 		</a></li>
+	<li>Now open a terminal in your computer and access your new server through SSH. You can do that with &quot;<span style="font-family: monospace;">ssh -i &lt;certificate_file&gt; root@&lt;public_dns&gt;</span>&quot;. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/13.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/13.png" /> 		 		</a></li>
+	<li>Once you're in, you can run &quot;<span style="font-family: monospace;">sh installEM.sh</span>&quot; to download and install the last version of EnterMedia into your server. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/14.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/14.png" /> 		 		</a></li>
+	<li>This script will download, uncompress, deploy EnterMedia and restart the web server. Once it's done wait one minute for the web server to start again. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/15.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/15.png" /> 		 		</a></li>
+	<li>Browse your web server again (using your public DNS name) and <span class="it">voila!</span> EnterMedia is running and ready to be used. As usual, you can log in with the username of <span class="code">admin</span> and password <span class="code">admin</span>. We strongly recommend you to change this password as soon as possible.   		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/16.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/16.png" /> 		 		</a></li>
+	<li>For your site to work properly, you will need to set the <span class="code">siteRoot</span> property. To do it, got to the file manager and select your root <span class="code">_site.xconf</span> file. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/17.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/17.png" /> 		 		</a></li>
+	<li>Look for the <span class="code">siteRoot</span> property and replace  <span class="code">demo.entermediasoftware.com</span> with your instance's public DNS name. 		 		<br />
+	<a href="http://entermediasoftware.com/docs/ec2/img/18.png"> 		 			<img alt="Amazon Web Services" src="http://entermediasoftware.com/docs/ec2/img/18.png" /> 		 		</a></li>
+</ol>
+</div>

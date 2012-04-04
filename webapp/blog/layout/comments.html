@@ -1,0 +1,98 @@
+
+#set ($img = "http://entermediasoftware.com/theme/images/logo.png")
+
+<meta property="og:title" content="$entry.title"/>
+<meta property="og:image" content="$img"/>
+<meta property="og:description" content=""/>
+
+
+<div class="oeblogpost clearfix" style="margin-top: 15px;">
+		
+		<div class="col1">
+			<div class="blog-date"> 
+				
+				## $entry.published("EEE, MMM d yyyy h:mm a")
+				## if($page.isPropertyTrue('usecomments')) <a class="oeblogcomment-link" href="${entry.link}">$entry.countVisibleComments() comment#if( $entry.countVisibleComments() != 1 )s #end</a>#end
+				
+				#if($page.isPropertyTrue('usecomments') && $entry.countVisibleComments() > 0 ) <a class="comments"><span>$entry.countVisibleComments()</span></a> #end
+				<span class="month">$entry.published("MMM")</span>
+				<span class="day">$entry.published("d")</span>
+				
+			</div>
+		</div>
+		
+		<div class="col7 blog-post-column" > 
+
+			
+			    <hgroup>
+				    <h1>$entry.title</h1>
+				     <h2>Posted by $entry.author at $entry.published("h:mm a")</h2>
+				</hgroup>
+			    
+				$pages.stream($entry.getPath() )
+			   	
+			   
+			   <div class="share">
+			   		<div>
+			   			
+				   		<span>Share this post:</span>
+				   		<ul>
+				   			<li>
+								<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="none" data-counturl="${entry.link}">Tweet</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							</li>
+				   			<li>
+								<!-- Place this tag where you want the +1 button to render -->
+								<g:plusone size="medium" href="${entry.link}" annotation="none"></g:plusone>
+								
+								<!-- Place this render call where appropriate -->
+								<script type="text/javascript">
+								  (function() {
+								    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+								    po.src = 'https://apis.google.com/js/plusone.js';
+								    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+								  })();
+								</script>
+							</li>
+							<li>
+								<div class="fb-like" data-href="${entry.link}" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="lucida grande"></div>
+								<div id="fb-root"></div>
+								<script>(function(d, s, id) {
+								  var js, fjs = d.getElementsByTagName(s)[0];
+								  if (d.getElementById(id)) return;
+								  js = d.createElement(s); js.id = id;
+								  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=252775831432764";
+								  fjs.parentNode.insertBefore(js, fjs);
+								}(document, 'script', 'facebook-jssdk'));</script>
+							</li>
+				   		</ul>
+				   	</div>
+			   </div>
+			   
+			   <div class="hr"></div>
+  
+        </div>
+     
+    </div>
+
+#if ( $entry.countVisibleComments() > 0 ))
+
+<div class="row" style="position: relative; top: -35px;">
+	<div class="col1">
+		<div class="add-comment"></div>
+	</div>
+		
+	<div class="col7"> 
+		<h4 style="margin-top: 10px;">Comments </h4>
+	</div>
+</div>
+
+#end		
+		
+ #if($page.isPropertyTrue('usecomments'))
+<div class="commentlist">
+$pages.stream("$bloghome/layout/commentlist.html")
+</div>
+
+$pages.stream("$bloghome/layout/postcomment.html")
+#end

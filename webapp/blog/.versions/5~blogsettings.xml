@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<blog>
+  <title>Entermedia Software</title>
+  <hostname>http://www.entermediasoftware.com/</hostname>
+  <author>Me</author>
+  <description>Entermedia blog</description>
+  <allow-anonymous-comments>false</allow-anonymous-comments>
+  <auto-publish-comments>true</auto-publish-comments>
+  <auto-publish-entries>true</auto-publish-entries>
+  <archive-root-directory>/blog/permalink</archive-root-directory>
+</blog>

@@ -1,0 +1,23 @@
+<p>Recently, I came across several questions one of our developers answered for a new user of EnterMedia digital asset management. I thought our answers might help other users learn a bit more about EnterMedia. Since we are an open source company, am sharing them here. I'll have to post questions and answers like this more often:</p>
+<p>What is the number of simultaneous concurrent sessions that the EnterMedia System can handle?<br />
+<em><br />
+With 100 servers each with 1000 simultaneous concurrent sessions would get you 100k sessions. These servers can be load balanced in the same way Google load balances search requests across multiple servers. When there are edits or uploads those changes are propagated across the servers so if one server goes down the others can fill in.</em><br />
+<br />
+Can the EnterMedia System handle high volume streaming?<br />
+<em><br />
+Yes. We recommend using the Amazon delivery network along with<br />
+</em><a class="moz-txt-link-freetext" href="http://www.adobe.com/products/httpdynamicstreaming/"><em>http://www.adobe.com/products/httpdynamicstreaming/</em></a><em><br />
+</em><br />
+Can the EnterMedia System auto adjust data bandwidth in media streams to compensate for any bottlenecking?<br />
+<em><br />
+Yes using the Adobe flash player</em><br />
+<br />
+Is there a standard &quot;build playlist&quot; feature with easy drag-n-drop interface?<br />
+<em><br />
+We support drag and drop in the browser using jQuery. </em><br />
+<br />
+Does EnterMedia use a database? If so or if not, what is the logic and advantages to this type of setup?<br />
+<em><br />
+EnterMedia has a pluggable data storage system. For distributed load balanced systems, we use Apache Lucene to search and update live indexes. We store all videos, images and data on the file system for backup, scalability and deployment reasons. Files are organized into catalogs of assets stored within a top level folder. Multiple catalogs to be served from the same server and mounts are used to spread a catalog across disk volumes.</em></p>
+<p><a href="http://entermediasoftware.com">EnterMediaSoftware</a></p>
+<p><span id="1299779030624E" style="display: none;">&nbsp;</span></p>

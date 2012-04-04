@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+  <blog author="Taylor Cornett" title="How To: Run EnterMedia on Amazon EC2" username="635">
+    <publishdate>2010-03-25T09:25:32.128-0500</publishdate>
+    <visible>false</visible>
+    <property id="summary">This tutorial will cover how to install and configure EnterMedia running on Amazon's EC2 service.</property>
+    <notifications/>
+    <property id="summary">This tutorial will cover how to install and configure EnterMedia running on Amazon's EC2 service.</property>
+  </blog>
+</page>

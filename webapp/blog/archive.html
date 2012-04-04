@@ -1,0 +1,31 @@
+<h2>Archive</h2>
+<div id="oeblogpost-listing" >
+	#foreach( $entry in $blog.getRecentVisibleEntries(200) ) 
+		<div class="oeblogpost clearfix"> 
+			<div class="col1">
+				<div class="blog-date"> 
+					
+					## $entry.published("EEE, MMM d yyyy h:mm a")
+					## if($page.isPropertyTrue('usecomments')) <a class="oeblogcomment-link" href="${entry.link}">$entry.countVisibleComments() comment#if( $entry.countVisibleComments() != 1 )s #end</a>#end
+					
+					#if($page.isPropertyTrue('usecomments') && $entry.countVisibleComments() != 0 ) <a class="comments"><span>$entry.countVisibleComments()</span></a> #end
+					<span class="month">$entry.published("MMM")</span>
+					<span class="day">$entry.published("d")</span>
+					
+				</div>
+			</div>
+			
+			<div class="col7"> 
+	
+				
+				     <hgroup>
+					    <h1><a href="$entry.link">$entry.title</a></h1>
+					    <h2>Posted by $entry.author at $entry.published("h:mm a")</h2>
+					</hgroup>	
+		  		
+	        	 <div class="hr"></div>
+	       </div>
+	       
+      </div>
+	#end
+</div>

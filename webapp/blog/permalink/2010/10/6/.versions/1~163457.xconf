@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+  <blog author="Ian Miller" title="A First Blog Post" username="353">
+    <publishdate>2010-10-06T16:34:57.247-0400</publishdate>
+    <visible>true</visible>
+    <property id="summary">Test</property>
+    <notifications/>
+    <property id="summary">Test</property>
+  </blog>
+</page>
