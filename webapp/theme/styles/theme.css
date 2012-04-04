@@ -75,11 +75,18 @@ td { vertical-align: top; }
 
 /* FONTS */
 
+#left-col p, .col12 p, .col12 ul li, .text {
+	font-family: georgia, serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #444;
+}
 h1, h2, h3, h4, h5, h6 {
-	color: #000;
+	color: #2a2a2a;
 	padding: 0 0 15px 0;
 	margin: 0;
 	letter-spacing: -0.055em;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
 h1 {
 	font-size: 42px;
@@ -116,12 +123,6 @@ h6 {
 p {
 	margin: 0 0 24px 0;
 }
-#left-col p, .col12 p {
-	font-family: georgia, serif;
-	font-size: 16px;
-	line-height: 24px;
-	color: #444;
-}
 .columns-2 {
 	-moz-column-count: 2;
 	-moz-column-gap: 20px;
@@ -139,19 +140,24 @@ p {
 	column-count: 3;
 	column-gap: 20px;
 }
-.install-list {
+.grey-box {
 	padding: 15px;
 	background: #f7f7f7;
 	border: 1px solid #e5e5e5;
 	border-radius: 5px;
 }
-.install-list p, .install-list li { 
+.grey-box p, .grey-box li { 
 	font-family: arial, helvetica, sans-serif !important;
 	line-height: 21px;
 	color: #444;
 	font-size: 14px;
 }
-
+row.clearfix:last-child {
+	border-bottom: none;
+}
+.sans-serif {
+	font-family: 'helvetica neue', helvetica, arial, sans-serif !important;
+}
 /* HEADER STYLES */
 
 header {
@@ -953,8 +959,7 @@ ul#tour li {
 
 div.hr {
 	border-top: 1px solid #eee;
-	padding: 15px 0 0 0;
-	margin: 20px 0;
+	padding: 15px 0;
 }
 .more-features ul li {
 	font-size: 14px;
@@ -1048,10 +1053,222 @@ form .btn {
 	margin: 18px 0 0 0;
 }
 
+.picframe {
+		padding: 3px;
+		background: #fff;
+		border: 1px solid #e5e5e5;
+		box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+}
+.col8 p {
+	font-family: georgia, serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #444;
+}
+.row.clearfix {
+	padding: 20px 0;
+	border-bottom: 1px solid #f3f3f3;
+}
+.nameplate {
+	margin-top: 60px;
+}
+.nameplate h4 {
+	margin-top: -15px;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
 
+/* BLOG STYLES */	
+
+.oeblogpost:first-child {
+	margin-top: 15px;
+}
+.oeblogpost hgroup h1 a, .oeblogpost hgroup h1 {
+	color: #2a2a2a;
+	font-size: 24px !important;
+	padding: 0;
+	margin: 0;
+}
+.oeblogpost hgroup h1 a:hover {
+	color: #000;	
+}
+.oeblogpost hgroup h2 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #ababab;
+	background: none;
+	padding: 0;
+	margin: 5px 0 30px 0;
+} 
+.blog-date {
+	background: #6FB353;
+	height: 55px;
+	width: 100%;
+	text-align: center;
+	margin: 5px 0 0 0;
+	padding: 0;
+	position: relative;
+}
+.blog-date .month {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10px;
+	color: #fff;
+	width: 54px;
+	padding: 0;
+	margin: 0;
+	height: 10px;
+}
+.blog-date .day {
+	display: block;
+	background: #fff;
+	padding: 0;
+	margin: 0 3px;
+	width: 48px;
+	height: 36px;
+	color: #6FB353;
+	line-height: 35px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.blog-date .comments {
+	width: 41px;
+	height: 31px;
+	position: absolute;
+	top: -18px;
+	left: 40px;
+	z-index: 2;
+	background: url('../images/comment-bubble.png');
+	color: #6FB353;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.blog-date .comments:hover {
+	color: #2a2a2a;
+	top: -19px;
+	
+} 
+.col7 .hr {
+	border-top: 1px dashed #ddd;
+	padding: 0;
+	margin: 45px 0;
+}
+.oeblogpost .col7 .share + .hr {
+	margin: 0 0 65px 0;
+}
+.oeblogpost .share {
+	position: relative;
+	top: -30px;
+	margin: 0;
+	padding: 45px 0 0 0;
+}
+.oeblogpost .share div {
+	color: #ababab;
+	margin: 0 -8px 0 0;
+
+}
+.oeblogpost .share span {
+	float: left;
+	margin: 0 5px 0 0;
+}
+.oeblogpost .share ul {
+	display: inline;
+}
+.oeblogpost .share ul li {
+	float: left;
+	list-style: none;
+	margin: -3px 3px 0 3px;
+	
+}
+.share ul li a {
+	background: url('../images/social-icons.png');
+	width: 16px;
+	height: 16px;
+	margin: 0 3px;
+}
+.share ul li a.twitter {
+	background-position: 0 0;
+}
+.share ul li a.facebook {
+	background-position: 48px 0;
+}
+.share ul li a.gplus {
+	background-position: 32px 0;
+}
+.share ul li a.facebook {
+	background-position: 48px 0;
+}
+.share ul li a.rss {
+	background-position: 16px 0;
+}
+.share ul li a:hover {
+	background-position-y: 16px;
+}
+.oeblogsidebar-title {
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	margin: 15px 0 25px 0;
+
+}
+#oeblogsidebar .blog-date {
+	width: 31px;
+	height: 31px;
+	float: left;
+	margin: 0 8px 0 0;
+	position: relative;
+}
+#oeblogsidebar .blog-date .month {
+	font-size: 7px;
+	height: 7px;
+	line-height: 7px;
+	position: relative;
+	top: -5px;
+}
+#oeblogsidebar .blog-date .day {
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	width: 27px;
+	margin: 0 2px;
+	position: relative;
+	top: -7px;
+}
+#oeblogsidebar .hr {
+	padding: 0;
+	margin: 20px 0;
+	border: 1px dashed #eee;
+}
+#oeblogsidebar .blog-title {
+	float: left;
+	width: 260px;
+}
+#oeblogsidebar .blog-title a {
+	color: #2a2a2a;
+	font-weight: bold;
+}
+#oeblogsidebar .blog-title a:hover {
+	color: #000;
+}
+#oeblogsidebar .comments {
+	color: #6FB353;
+	padding-left: 18px;
+	background: url('../images/comments-icon.png') left center no-repeat;
+	height: 13px;
+	font-size: 12px;
+}
+.add-comment {
+	background: url('../images/add-comment.png');
+	width: 53px;
+	height: 48px;
+}
 /* BUTTONS */
 
 .btn {
+	font-family:'helvetica neue', helvetica, arial, sans-serif;
 	color: #fff;
 	padding: 6px 15px;
 	font-weight: bold;
@@ -1105,6 +1322,18 @@ form .btn {
 }
 .plan.standard .btn:active {
 	top: 12px;
+}
+span.green {
+	color: #6FB353;
+}
+.disclaimer {
+	padding: 15px;
+	font-size: 12px;
+	color: #666;
+	font-style: italic;
+}
+.more-features ul li {
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
 /* ==|== grid system (978.gs) ======================================== */
 

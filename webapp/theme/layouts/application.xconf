@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<page>
-  <inner-layout>${themeprefix}/layouts/layout.html</inner-layout>
 
-  	<property name="editable">false</property>
+<page>
+  <property name="title">EnterMedia Software - Enterprise Digital Asset Management Server Platform for Online Sharing and Distribution</property>
+  <property name="keywords">EnterMedia</property>
+  <property name="description">EnterMedia is Adam Newdow</property>
+  <property name="editable">false</property>
+  <inner-layout>${themeprefix}/layouts/layout.html</inner-layout>
 </page>

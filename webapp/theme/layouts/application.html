@@ -2,7 +2,8 @@
     	<div class="container">
 	    	<div id="logo"><h1><a class="ir" href="/">EnterMedia Software - Welcome to EnterMedia 8</a></h1></div>
 	    	<ul id="social-nav">
-				<li class="download"><a href="/views/download/index.html">Download the Source Code!</a></li>
+				<li class="demo"><a href="/views/download/index.html">Download the Source Code!</a></li>
+				<li class="download"><a target="_blank" href="http://demo.entermediasoftware.com">Check out the Demo!</a></li>
 	    	</ul>
 	    	$pages.include("/views/home/topmenu.html")
 		</div>
@@ -15,29 +16,31 @@ $pages.includeContent()
 			<div id="footer-logo">
 				<h1><a class="ir" href="/">EnterMedia Software - Welcome to EnterMedia 8</a></h1>
 			</div>
-				<ul id="footer-nav">
-					<li>// <a href="/views/tour/index.html">Tour</a></li>
-					<li>// <a href="/views/features/index.html">Features</a></li>
-					<li>// <a href="/views/about/index.html">About</a></li>
-					<li>// <a href="/views/blog/index.html">Blog</a></li>
-					<li>// <a href="/views/contact/index.html">Contact</a>
-						<ul>
-							<li><a href="http://www.facebook.com/pages/EnterMedia/121544607860643">Facebook</a>
-							<li><a href="http://twitter.com/#!/EnterMedia_DAM">Twitter</a>
-							<!-- li><a href="#">Google +</a -->
-						</ul>
-					</li>
-				</ul>
+				
+			$pages.include("/views/home/footermenu.html")
+	
+			<hr />
 			
-		
-		<hr />
-		
-		<p>Copyright &copy; 2012 Entermedia Software Inc. - All rights reserved.</p>
+			<p>Copyright &copy; 2012 EnterMedia Software Inc. - All rights reserved.</p>
+			
 		</div>
     </footer>
+	
+	<script type="text/javascript">
 
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-18961523-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
 
-
+	
   <!--[if lt IE 7 ]>
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
