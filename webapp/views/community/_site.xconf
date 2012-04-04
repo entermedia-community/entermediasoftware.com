@@ -1,0 +1,5 @@
+<page>
+<property name="virtual">true</property>
+<property name="sectiontitle">Community</property>
+<inner-layout>/views/community/viewfeed.html</inner-layout>
+</page>
