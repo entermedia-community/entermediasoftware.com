@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>$content.title</title>
+  <title>#if( $content.sectiontitle ) $content.sectiontitle #else $content.title #end - EnterMedia</title>
   <meta name="description" content="$content.description">
   <meta name="author" content="">
   <META NAME="Keywords" CONTENT="$content.keywords">
@@ -23,7 +23,7 @@
 #foreach( $style in $content.getStylePaths() )
 	<link rel="stylesheet" type="text/css" href="$home$style" />
 #end
-  
+  <script type="text/javascript" src="http://em7.entermediasoftware.com/media/catalogs/jysproductions/mediaplayer/flowplayer/flowplayer-3.2.4.min.js"></script>
   
 </head>
 

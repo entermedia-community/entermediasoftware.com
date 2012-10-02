@@ -2,7 +2,11 @@
 
   <property name="encoding">UTF-8</property>
  
-  <property name="title">EnterMedia</property>
+  <property name="title">Welcome to EnterMedia 8</property>
+  <property name="keywords">open source, media asset management, digital asset management, dam, video blog, video processing</property>
+  <property name="description">EnterMedia Software develops management solutions for enterprise, educational, and business institutions to track, share, and distribute digital media files online. Our current release is robust with custom settings and secure permissions for administrators to easily control usage rights and secure data.</property>
+  
+
   <property name="editable">true</property>
   <property name="allowguestregistration">true</property>
 
@@ -24,5 +28,9 @@
   <script id="jquery-fancybox" src="/components/javascript/jquery.fancybox/jquery.fancybox-1.2.1.js"/>
   <style id="jquery-fancybox-css" href="/components/javascript/jquery.fancybox/jquery.fancybox.css"/>
   <script id="jquery-livequery" src="/components/javascript/jquery.livequery.js"/>
+  <path-action name="Admin.redirectHost" >
+    <redirecthost>http://entermediasoftware.com</redirecthost>
+  </path-action>
+
 
 </page>

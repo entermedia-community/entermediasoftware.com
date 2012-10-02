@@ -1,4 +1,8 @@
 <page>
 	<property name="section">about</property>
+  <property name="title">About</property>
+  <property name="keywords">open source, media asset management, digital asset management, dam, cincinnati, christopher burkey, agile</property>
+  <property name="sectiontitle">About</property>
+  <property name="description">EnterMedia Software creates leading edge technology for media distribution and online content sharing. CEO Christopher Burkey has been developing digital asset management solutions for over a decade. EnterMedia can streamline your workflow and secure information for safe sharing of rights managed content.</property>
 
 </page>

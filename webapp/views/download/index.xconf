@@ -1,4 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
 <page>
-	<property name="sectiontitle">Download EnterMedia 8</property>
+  <property name="title">EnterMedia Software - Welcome to EnterMedia 8 - Download</property>
+  <property name="keywords">open source, media asset management, digital asset management, dam, source code, java, git, repository</property>
+  <property name="sectiontitle">Download EnterMedia 8</property>
+  <property name="description">Download latest builds of EnterMedia 8 - digital asset management server platform for Windows, Linux, Mac OS X, and Solaris. EnterMedia source code is freely available open source code built on Java. Share digital media content online with secure, customizable permissions to protect your data.</property>
 </page>

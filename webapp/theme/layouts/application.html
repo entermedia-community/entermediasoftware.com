@@ -39,6 +39,24 @@ $pages.includeContent()
 	  })();
 	
 	</script>
+	
+	<script type="text/javascript">	
+
+		// a- tags with class "myPlayer" are transformed into video players
+		flowplayer("a.myPlayer", "http://em7.entermediasoftware.com/media/catalogs/jysproductions/mediaplayer/flowplayer/flowplayer-3.2.5.swf", {
+		
+		 onLoad: function () {
+		    this.setVolume(70);
+		  },
+		
+			// this is the player configuration. You'll learn on upcoming demos.
+			plugins:  {
+				controls:  {
+					volume: true		
+				}
+			}
+		});
+	</script>
 
 	
   <!--[if lt IE 7 ]>

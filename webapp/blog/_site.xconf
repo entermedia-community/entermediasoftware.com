@@ -1,5 +1,5 @@
 <page>	
 	
   <property name="sectiontitle">Blog</property>
-  
+  <property name="section">blog</property>
 </page>

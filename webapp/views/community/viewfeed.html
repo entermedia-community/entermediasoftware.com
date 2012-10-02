@@ -1,9 +1,42 @@
-#foreach($entry in $rss.entries)
-<hr>
-<a href="$entry.link" >$entry.title</a><br>
-$entry.description.value<br>
-$entry.author<br>
-$entry.getPublishedDate()<br>
-
-#end
-
+<div class="row clearfix">
+	<div class="col8">
+		#foreach($entry in $rss.entries)
+		<div class="oeblogpost clearfix">
+			
+			<div class="col1">
+				<div class="add-comment"></div>
+			</div>
+			<div class="col7">
+			
+					
+					
+					
+					<hgroup>
+					    <h1><a href="$entry.link">$entry.title</a></h1>
+					    <h2>Posted by $entry.author at $context.getDateTime($entry.getPublishedDate())</h2>
+					</hgroup>
+					
+					<div class="rss-copy">	
+						$entry.description.value
+					</div>
+					  <div class="hr"></div>
+					  
+					
+				
+			</div>
+		</div>
+		
+		#end
+	</div>
+	<div class="col4">
+		<div class="grey-box">
+			<h6>Join Our Community!</h6>
+			<div class="hr" style="padding-bottom: 0;"></div>
+			<p>To the left you will find an up to date RSS feed view of our Google Groups Community.  The most recently updated topics will be displayed first.</p>
+			<p>Have a question or comment about EnterMedia? Join our Google Group by clicking on the link below!</p>
+				<p style="text-align: center; margin-bottom: 10px;">
+					<a class="btn" target="_blank" href="https://groups.google.com/forum/?fromgroups&hl=en#!forum/entermedia">Join Now!</a>
+				</p>
+		</div>
+	</div>
+</div>

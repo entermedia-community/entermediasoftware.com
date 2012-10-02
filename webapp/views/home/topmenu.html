@@ -1,13 +1,10 @@
 <ul id="main-nav">
-#set( $section = $content.section )
 
-#set( $links = $searcherManager.getList("site","topmenu"))
-#foreach($link in $links)
-	#if( $velocityCount > 1)
+		<!-- 
 	<li class="divider">/</li>
-	#end
-	<li #if( $section == $link.id )class="current" #end><a href="/views/${link.id}/index.html">$link.name</a></li>
-#end
+		<li ><a href="/views/${link.id}/index.html">$link.name</a></li> 
+	-->
+
 	<!-- li class="dd left"><a href="/views/community/index.html">Community</a>
 	<ul>
 		<li><a href="#">Education</a>
@@ -16,13 +13,35 @@
 		<li><a href="#">Business</a>
 		<li><a href="#">Marketing</a>
 	</ul>
-	</li 
-	<li><a href="/views/features/index.html">Features</a></li>
+	</li -->
+	
+	<li class="dd left "><a>Learning Center</a>
+		<ul>
+			<li><a href="/views/learningcenter/tour/index.html">EnterMedia 8 Tour</a></li>
+			<li><a href="/views/learningcenter/features/index.html">EnterMedia 8 Features</a></li>
+			<li><a href="/views/learningcenter/wiki/index.html">EnterMedia 8 Knowledge Base</a></li>
+		</ul>
+	</li>
 	<li class="divider">/</li>
-	<li><a href="/views/plans/index.html">Plans &amp; Pricing</a></li>
+	<li class="dd left current "><a>Plans &amp; Pricing</a>
+		<ul>
+			<li><a href="/views/plans/index.html">15 Day Deployment</a></li>
+			<li><a href="/views/plans/hosted-media-dam.html">Hosted Server Solutions</a></li>
+			<li><a href="/views/plans/additionalservices.html">Additional Services &amp; Support Options</a></li>
+		</ul>
+	</li>
 	<li class="divider">/</li>
-	<li><a href="/views/about/index.html">About</a></li>
+	<li class="dd left "><a href="/views/about/index.html">About</a>
+		<ul>
+			<li><a href="/views/about/partners.html">Partners</a></li>
+			<li><a href="/views/about/team.html">Meet the Team</a></li>
+		</ul>
+	</li>
+	<li class="divider">/</li>
+	<li><a href="/views/community/index.html">Community</a></li>
+	<li class="divider">/</li>
+	<li><a href="/blog/index.html">Blog</a></li>
 	<li class="divider">/</li>
 	<li><a href="/views/contact/index.html">Contact</a></li>
-	-->
+	
 </ul>

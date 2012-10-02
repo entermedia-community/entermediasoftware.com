@@ -1,6 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <page>
-
-<property name="title">EnterMedia Software - Welcome to EnterMedia 8</property>
+  <property name="title">Open Source Digital Asset Management</property>
+  <property name="keywords">open source, media asset management, digital asset management, dam</property>
+  <property name="description">EnterMedia Software develops management solutions for enterprise, educational, and business institutions to track, share, and distribute digital media files online. Our current release is robust with custom settings and secure permissions for administrators to easily control usage rights and secure data.</property>
   <inner-layout>${themeprefix}/layouts/application.html</inner-layout>
-
 </page>

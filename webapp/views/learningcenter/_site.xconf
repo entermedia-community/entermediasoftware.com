@@ -1,13 +1,4 @@
-
 <page>
 	<property name="sectiontitle">Learning Center</property>
-	<generator  name="wiki" mimetypes="text/html"/>
-	<property name="editable">true</property>
-	<permission name="edit">
-		<boolean value="true" /> 
-	</permission>
-	<path-action name="Admin.loadPermissions"/>
-	<path-action name="Admin.allowEditing"/>
-	<path-action name="HtmlEditor.check404" alltypes="true" />
-	
+	<property name="section">learningcenter</property>
 </page>

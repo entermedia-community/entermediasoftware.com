@@ -2,4 +2,9 @@
 <property name="virtual">true</property>
 <property name="sectiontitle">Community</property>
 <inner-layout>/views/community/viewfeed.html</inner-layout>
+<property name="section">community</property>
+
+
+
+
 </page>

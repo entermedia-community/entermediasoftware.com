@@ -1,4 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
 <page>
-	<property name="sectiontitle">Plans &amp; Pricing</property>
+  <property name="title">EnterMedia Software - Welcome to EnterMedia 8 - Plans &amp; Pricing</property>
+  <property name="keywords">open source, media asset management, digital asset management, dam, 30-day deployment, additional services</property>
+  <property name="description">Deploy EnterMedia for Window, Linix, Mac OS X, and Solaris. Our trained technicians offer Hand's on training and one year limited warranty in addition to installation. Custom integrations and feature enhancements are handled on a consulting basis. Our open source software is also freely available for developers.</property>
 </page>
